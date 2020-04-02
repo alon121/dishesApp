@@ -8,7 +8,7 @@ export class LocalStorageService {
   constructor() { }
 
   keepThisInStorage(ContentName, Content) {
-    window.localStorage.setItem(`${ContentName}`, JSON.stringify(`${Content}`));
+    window.JSON.stringify(window.localStorage.setItem(`${ContentName}`, `${Content}`));
   }
   getThisFromStorage(ContentName) {
     window.JSON.parse(window.localStorage.getItem(`${ContentName}`));
