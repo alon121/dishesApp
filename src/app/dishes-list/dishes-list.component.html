@@ -1,0 +1,24 @@
+ <div class="card-header text-center bg-light mb-3">
+   <h3 class="card-title">Dishes List</h3>
+   <small>selected dish name for test only >>>>  {{this.selecteddish}}</small>
+ </div>
+ <div class="card-group">
+   <div class="card-body" *ngFor="let dish of this.dishesListExample" (click)="selctedDish(this.dish)">
+     <img class="card-img-top" src="{{this.dish.thumbnail}}" onerror="this.src='/assets/no_picture.jpg'">
+     <div class="details">
+       <h4 class="card-title">{{this.dish.title}}</h4>
+       <p class="card-text">Ingredients:</p>
+       <p class="card-text">{{this.dish.ingredients}}</p>
+       <div>
+       </div>
+       <div class="card-footer bg-transparent">
+         <small class="text-muted">click on for more details<i
+             class="fal fa-hand-point-right"></i></small>
+       </div>
+     </div>
+
+     <!--          title: "Soy Sauce Eggs -  Ramen Eggs",
+        href: "http://www.recipezaar.com/Soy-Sauce-Eggs-Ramen-Eggs-315722",
+        ingredients: "eggs, rice vinegar, vegetable oil, soy sauce, sugar",
+        thumbnail: "http://img.recipepuppy.com/33686.jpg",
+     -->

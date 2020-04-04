@@ -1,0 +1,19 @@
+  <div class="card-header text-center  bg-light mb-3">
+    <h3 class="card-title">Dish's Review</h3>
+    <small>for example only </small>
+  </div>
+  <div class="card border-dark">
+
+  <div class="card-body">
+    <img class="card-img-top" src="{{this.dishDetails.thumbnail}}" alt="Card image cap">
+    <div class="details">
+      <h4 class="card-title">{{this.dishDetails.title}}</h4>
+      <p class="card-text">Ingredients:</p>
+      <p class="card-text">{{this.dishDetails.ingredients}}</p>
+      <div>
+      </div>
+      <div class="card-footer bg-transparent">
+        <a href="{{this.dishDetails.href}}" class="btn btn-secondary text-white">GO TO RECIPE <i class="fas fa-external-link"></i> </a>
+        <button class="btn btn-secondary ml-3 text-white">ADD TO FAVORITE <i class="far fa-thumbs-up"></i></button>
+      </div>
+    </div>

@@ -1,0 +1,132 @@
+
+#main{
+    display: flex;
+}
+@media (max-width:566px) {
+  #main {
+     display: inline-block;
+    max-width: 550px;
+    width: 90%;
+    height: 95%;
+  }
+
+  .container {
+    max-width: 550px;
+  }
+  #dishelist {
+    display: block;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 95%;
+  }
+
+  #dishereview { 
+    display: block;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 95%;
+  }
+}
+
+/* Smal devices 567-767*/
+@media (min-width: 567px) and (max-width:767px) {
+  #main {
+      display: inline-block;
+    max-width: 650px;
+    width: 90%;
+    height: 95%;
+  }
+
+  .container {
+    max-width: 740px;
+  }
+  #dishelist {
+      display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  #dishereview {
+      display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50%;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991px) {
+  #main {
+    max-width: 900px;
+    width: 90%;
+    height: 95%;
+  }
+
+  .container {
+    max-width: 940px;
+  }
+
+  #dishelist {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 65%;
+  }
+
+  #dishereview {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 35%;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width:1119px) {
+  #main {
+    max-width: 1080px;
+    width: 90%;
+    height: 95%;
+  }
+
+  .container {
+    max-width: 1110px;
+  }
+
+  #dishelist {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 65%;
+  }
+
+  #dishereview {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 35%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #main {
+    max-width: 1700px;
+    width: 90%;
+    height: 95%;
+  }
+
+  .container {
+    max-width: 1800px;
+  }
+
+  #dishelist {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 65%;
+  }
+
+  #dishereview {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 35%;
+  }
+}
